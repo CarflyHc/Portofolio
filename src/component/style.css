@@ -1,0 +1,10 @@
+li:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+li:focus-within{
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
