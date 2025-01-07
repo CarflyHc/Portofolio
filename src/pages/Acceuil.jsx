@@ -1,6 +1,12 @@
+import Foot from "../component/footer"
+
+
 const Home = () => {
     return (
-        <h1>Bonjoutrsd ç tous</h1>
+        <div>
+        <h1>Bonjours à tous</h1>
+        <Foot/>
+        </div>
     )
 }
 export default Home

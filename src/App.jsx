@@ -1,4 +1,4 @@
-import Nav from "./component/nav"
+import Navigation from "./component/nav"
 import Home from "./pages/Acceuil"
 import { Routes,Route } from "react-router-dom"
 import Services from "./pages/Services"
@@ -9,15 +9,16 @@ import Contact from "./pages/contact"
 function App()  {
   return (
       <>
-        <Nav/>
+        <Navigation/>
                 <Routes>
-                  <Route path="/" element={<Nav/>}/>
+                  <Route path="/" element={<Navigation/>}/>
                   <Route index element={<Home/>}/>
                   <Route path ="Contact" element={<Contact/>}/> 
                   <Route path ="Services" element={<Services/>}/>
                   <Route path ="Realisations" element={<Realisations/>}/>
                   <Route path ="Mentions-Legales" element={<CAV/>}/>
-                </Routes>      
+                </Routes>
+                      
       </>
   )
 }

@@ -1,10 +1,5 @@
-li:hover{
-    text-decoration: underline;
-    color: white;
+*,::after, ::before{
+    box-sizing: border-box;
+    
 }
 
-li:focus-within{
-    font-weight: bold;
-    text-decoration: underline;
-    color: white;
-}
