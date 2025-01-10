@@ -2,8 +2,8 @@
 const Foot = () => {
     return (
         <>
-            <div className="d-block bg-dark">
-                <p>Bonjour à tous</p>
+            <div className="bg-dark">
+                <p className="align-text-bottom">Bonjour à tous</p>
             </div>
         </>
     )

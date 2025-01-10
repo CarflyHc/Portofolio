@@ -1,6 +1,10 @@
+
 const Services = () => {
     return (
-        <h1>Services</h1>
+        <div>
+
+            <h1>Services</h1>
+        </div>
     )
 }
 export default Services

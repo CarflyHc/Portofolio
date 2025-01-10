@@ -1,12 +1,13 @@
-import Foot from "../component/footer"
+import "../component/home.css"
 
-
-const Home = () => {
-    return (
-        <div>
-        <h1>Bonjours à tous</h1>
-        <Foot/>
-        </div>
-    )
+export default function Home() {
+  return (
+    <main className="home">
+      <div className="homeContainer">
+        <h1>Bonjour je suis John Doe</h1>
+        <h2>Développeur Full stack</h2>
+        <button className="btnHome">En savoirs plus</button>
+      </div>
+    </main>
+  )
 }
-export default Home
