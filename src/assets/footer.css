@@ -1,3 +1,11 @@
-a:hover{
-    color: white;
+article>.hoverSocial:hover,
+article>.hoverSocial:focus{
+    color: white !important;
+    transition: color 2s;
 }
+
+ul>li>.bold:hover,
+ul>li>.bold:focus{
+    font-weight: bold;
+    transition: all 1.5s;
+}   

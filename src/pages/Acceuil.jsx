@@ -28,7 +28,7 @@ export default function Home() {
           </article>
           <article className="container">
             <h3 className="fw-bold">Mes compétences</h3>
-            <hr className="border border-primary border-3 opacity-75 mb-5 " />
+            <hr className="border border-primary border-3 opacity-75 mb-5" />
             <h4>HTML5 90%</h4>
             <ProgressBar className="mb-3" variant="danger" now={90 } />
             <h4>CSS3 80%</h4>
