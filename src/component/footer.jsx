@@ -4,6 +4,7 @@ import "../assets/footer.css"
 import { NavLink } from "react-router-dom"
 import { Nav } from "react-bootstrap"
 
+
 const Foot = () => {
     return (
         <>

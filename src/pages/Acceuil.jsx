@@ -1,11 +1,19 @@
 import { Button, ProgressBar } from "react-bootstrap"
 import "../assets/home.css"
 import Foot from "../component/footer"
-
+import GithubModal from "../component/modal.jsx"
+import { useState } from "react"
 
 
 
 export default function Home() {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
+
   return (
     <>
     <main className="bg-white pb-4">
@@ -13,8 +21,9 @@ export default function Home() {
         <article className="homeContainer">
           <h1 className="fs-">Bonjour, je suis John Doe</h1>
           <h2>Développeur Web Full stack</h2>
-          <Button variant="danger" >En savoir plus</Button>
-        </article>
+          <Button variant="danger" onClick={handleOpenModal}>En savoir plus</Button>
+
+          <GithubModal showModal={showModal} onClose={handleCloseModal} />        </article>
       </section>
       <section className=" shadow m-3 bg-white ">
         <div className="contianer p-3">
