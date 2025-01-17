@@ -24,29 +24,43 @@ const GithubModal = ({ showModal, onClose }) => {
     <>
       <Button variant="danger" >En savoir plus</Button>
       <Modal show={showModal} onHide={onClose}>
-        <Modal.Header closeButton>
+        <Modal.Header className="bg-dark text-white" closeButton>
           <Modal.Title>Mon Profil GitHub</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className='bg-dark'>
           {data ? (
-            <div>
-              <h5>{data.name}</h5>
-              <p><i className="bi bi-person"></i> {data.login}</p>
-              <p><strong>Bio :</strong> {data.bio}</p>
-              <p><strong>Followers :</strong> {data.followers}</p>
-              <p><strong>Following :</strong> {data.following}</p>
-              <p><strong>Repos publics :</strong> {data.public_repos}</p>
-              <p><strong>Blog :</strong> <a href={data.blog} target="_blank" rel="noopener noreferrer">{data.blog}</a></p>
-              <p><strong>Location :</strong> {data.location || 'Non spécifiée'}</p>
-              <p><strong>Twitter :</strong> <a href={`https://twitter.com/${data.twitter_username}`} target="_blank" rel="noopener noreferrer">{data.twitter_username}</a></p>
-              <p><strong>Créé le :</strong> {new Date(data.created_at).toLocaleDateString()}</p>
-              <img src={data.avatar_url} alt="Avatar" className="img-fluid rounded-circle" style={{ width: '100px' }} />
+            <div className="container bg-dark text-white pb-4">
+              <img src={data.avatar_url} alt="Avatar" className="img-fluid mb-2" />
+              <div className="container">
+                <i className="bi bi-person me-2"></i> 
+                <a href="https://github.com/github-john-doe" target='_blank'>{data.name}</a>
+              </div>
+              <hr className="my-2" />
+              <div className="container">
+                <i className="bi bi-geo-alt me-2"></i> {data.location}
+              </div>
+              <hr className="my-2" />
+              <div className="container">
+                <i className="bi bi-card-text me-2"></i> {data.bio}
+              </div>
+              <hr className="my-2" />
+              <div className="container">
+                <i className="bi bi-box me-2"></i> Repositories : {data.public_repos}
+              </div>
+              <hr className="my-2" />
+              <div className="container">
+                <i className="bi bi-people me-2"></i> Followers : {data.followers}
+              </div>
+              <hr className="my-2" />
+              <div className="container">
+                <i className="bi bi-people me-2"></i> Following : {data.following}
+              </div>
             </div>
           ) : (
             <p>Chargement des données...</p>
           )}
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className='bg-dark' >
           <Button variant="secondary" onClick={onClose}>Fermer</Button>
         </Modal.Footer>
       </Modal>
