@@ -19,7 +19,7 @@ export default function Home() {
     <main className="bg-white pb-4">
       <section className="home">
         <article className="homeContainer">
-          <h1 className="fs-">Bonjour, je suis John Doe</h1>
+          <h1 className="fs-1 fs-md-3 fs-lg-5">Bonjour, je suis John Doe</h1>
           <h2>Développeur Web Full stack</h2>
           <Button variant="danger" onClick={handleOpenModal}>En savoir plus</Button>
 

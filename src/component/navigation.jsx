@@ -4,14 +4,24 @@ import { Nav } from "react-bootstrap"
 
 const Navigation = () => {
     return (
-          <Nav variant="underline" className="navbar navbar-dark bg-dark navbar-expand-md">
-            <div className="container">
+          <Nav variant="underline" className="navbar navbar-dark bg-dark navbar-expand-md justify-content-between px-4">
+
               <span className="navbar-brand p-3">John Doe</span>
-              <button className="navbar-toggler rounded collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button 
+                className="navbar-toggler rounded collapsed" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+              >
               <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="navbar-collapse collapse justify-content-end" id="navbarNav">
+              <div 
+                className="navbar-collapse collapse justify-content-end" 
+                id="navbarNav"
+              >
                 <ul className="navbar-nav">
                   <Nav.Item as ="li" className="nav-item">
                     <NavLink to="/" className="nav-link link-light text-uppercase">
@@ -32,7 +42,6 @@ const Navigation = () => {
                   </Nav.Item>
                 </ul>
               </div>
-            </div>
           </Nav>
     )
 }
