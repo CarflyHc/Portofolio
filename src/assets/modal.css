@@ -1,0 +1,17 @@
+.avatar {
+    object-fit: contain;
+  }
+  
+  /* Pour les écrans moyens (tablettes) */
+  @media (min-width: 768px) {
+    .avatar {
+      max-height: 200px;
+    }
+  }
+  
+  /* Pour les écrans plus grands */
+  @media (min-width: 1024px) {
+    .avatar {
+      max-height: 400px;
+    }
+  }

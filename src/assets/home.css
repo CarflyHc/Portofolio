@@ -1,0 +1,49 @@
+.home{
+    background-image: url(../../public/hero-bg-Copie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    filter: opacity(80%);
+}
+
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    height: 60rem;
+    width: 100%;
+    text-align: center;
+    margin: 2px;
+}
+.homeContainer h1 {
+    font-size: 3.5rem;
+}
+
+@media (min-width:1024px) {
+    .homeContainer h1 {
+        font-size: 10rem;
+    }
+}
+
+    .homeContainer h2{
+    font-size: 2.5rem;
+}
+
+@media (min-width:768px) {
+    .homeContainer h2 {
+        font-size: 3rem;
+    }
+
+    .homeContainer h1 {
+        font-size: 4rem;
+    }
+}
+
+
