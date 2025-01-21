@@ -8,7 +8,7 @@ import Portofolio from "./pages/Portofolio"
 
 function App()  {
   return ( 
-      <div>
+      <>
         <Navigation/>
         <Routes>
           <Route path="/" element={<Home />}/>
@@ -17,7 +17,7 @@ function App()  {
           <Route path ="/Portofolio" element={<Portofolio />}/>
           <Route path ="/Mentions-Legales" element={<CAV />}/>
         </Routes>
-      </div>
+      </>
   );
 }
 

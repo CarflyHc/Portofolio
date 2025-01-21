@@ -5,7 +5,6 @@ import { Nav } from "react-bootstrap"
 const Navigation = () => {
     return (
           <Nav variant="underline" className="navbar navbar-dark bg-dark navbar-expand-md justify-content-between px-4">
-
               <span className="navbar-brand p-3 text-uppercase">John Doe</span>
               <button 
                 className="navbar-toggler rounded collapsed" 
