@@ -31,7 +31,7 @@ export default function Home() {
             <article className="col-12 col-md-6">
               <h3 className="fw-bold">A propos</h3>
               <hr className="border border-primary border-3 opacity-75 mb-4" />
-              <img className="img-fluid" src="../../public/john-doe-about-Copie.jpg" alt="" />
+              <img className="img-fluid" src="../../public/john-doe-about-Copie.jpg" alt="Photo d'une personne derrière un ordinateur" />
               <p className="pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minus similique rerum totam soluta commodi sunt ducimus. Placeat enim illo reiciendis cupiditate animi esse quis numquam quo fuga, distinctio quas.</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minus similique rerum totam soluta commodi sunt ducimus. Placeat enim illo reiciendis cupiditate animi esse quis numquam quo fuga, distinctio quas.</p>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minus similique rerum totam soluta commodi sunt ducimus. Placeat enim illo reiciendis cupiditate animi esse quis numquam quo fuga, distinctio quas.</p>

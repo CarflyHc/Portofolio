@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Acceuil"
 import { Routes,Route } from "react-router-dom"
 import Services from "./pages/Services"
