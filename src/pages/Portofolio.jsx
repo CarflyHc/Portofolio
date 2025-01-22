@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Button, Card, Col, Row } from "react-bootstrap"
 import Foot from "../component/footer"
-import "../assets/portofolio.css"
 
 const Portofolio = () => {
     return (
@@ -26,7 +25,7 @@ const Portofolio = () => {
                         md={4}
                         className=""
                     >
-                        <Card className="mb-3 text-center">
+                        <Card className="mb-3 text-center Card">
                             <Card.Img 
                                 className="img-fluid" 
                                 src="../../public/portofolio/fresh-food.jpg" 
@@ -41,6 +40,7 @@ const Portofolio = () => {
                                 </Card.Text>
                                 <Button 
                                     variant="primary"
+                                    className="btnCard"
                                 >
                                     Voir le site
                                 </Button>
@@ -53,7 +53,7 @@ const Portofolio = () => {
                         </Card>
                     </Col>
                     <Col md={4}>
-                        <Card className="mb-3 text-center">
+                        <Card className="mb-3 text-center Card">
                             <Card.Img 
                                 className="img-fluid" 
                                 src="../../public/portofolio/restaurant-japonais.jpg" 
@@ -68,6 +68,7 @@ const Portofolio = () => {
                                 </Card.Text>
                                 <Button 
                                     variant="primary"
+                                    className="btnCard"
                                 >
                                     Voir le site
                                 </Button>
@@ -80,7 +81,7 @@ const Portofolio = () => {
                         </Card>
                     </Col>
                     <Col md={4}>
-                        <Card className="mb-3 text-center">
+                        <Card className="mb-3 text-center Card">
                             <Card.Img 
                                 className="img-fluid" 
                                 src="../../public/portofolio/espace-bien-etre.jpg" 
@@ -93,7 +94,10 @@ const Portofolio = () => {
                                 <Card.Text>
                                     Site de vente de produits frais en ligne
                                 </Card.Text>
-                                <Button variant="primary">
+                                <Button 
+                                    variant="primary"
+                                    className="btnCard"
+                                >
                                     Voir le site
                                 </Button>
                             </Card.Body>
@@ -107,7 +111,7 @@ const Portofolio = () => {
                 </Row>
                 <Row>
                     <Col md={4}>
-                        <Card className="mb-3 text-center">
+                        <Card className="mb-3 text-center Card">
                             <Card.Img 
                                 className="img-fluid" 
                                 src="../../public/portofolio/seo.jpg" 
@@ -120,7 +124,10 @@ const Portofolio = () => {
                                 <Card.Text>
                                     Amélioration du référencement d'un site e-commerce
                                 </Card.Text>
-                                <Button variant="primary">
+                                <Button 
+                                    variant="primary"
+                                    className="btnCard"
+                                >
                                     Voir le site
                                 </Button>
                             </Card.Body>
@@ -132,7 +139,7 @@ const Portofolio = () => {
                         </Card>
                     </Col>
                     <Col md={4}>
-                        <Card className="mb-3 text-center">
+                        <Card className="mb-3 text-center Card">
                             <Card.Img 
                                 className="img-fluid" 
                                 src="../../public/portofolio/coder.jpg" 
@@ -145,7 +152,10 @@ const Portofolio = () => {
                                 <Card.Text>
                                     Création d'une API RESTFULL publique
                                 </Card.Text>
-                                <Button variant="primary">
+                                <Button 
+                                    variant="primary"
+                                    className="btnCard"
+                                >
                                     Voir le site
                                 </Button>
                             </Card.Body>
@@ -157,7 +167,7 @@ const Portofolio = () => {
                         </Card>
                     </Col>
                     <Col md={4}>
-                        <Card className="mb-5 text-center">
+                        <Card className="mb-5 text-center Card">
                             <Card.Img 
                                 className="img-fluid" 
                                 src="../../public/portofolio/screens.jpg" 
@@ -170,7 +180,10 @@ const Portofolio = () => {
                                 <Card.Text>
                                     Création d'un prototype d'un site
                                 </Card.Text>
-                                <Button variant="primary">
+                                <Button 
+                                    variant="primary"
+                                    className="btnCard"
+                                >
                                     Voir le site
                                 </Button>
                             </Card.Body>

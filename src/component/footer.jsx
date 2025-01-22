@@ -14,14 +14,14 @@ const Foot = () => {
                         <article className="d-flex flex-column">
                             <h4 className="text-white">John Doe</h4>
                             <address className="text-white d-flex flex-column">
-                            <span>40 rue Laure Diebold</span>
-                            <span>69009 Lyon, France</span>
-                            <a className="text-white text-decoration-none" href="tel:0102030405">
-                            10 20 30 40 50
-                            </a>
-                            <a className="text-white text-decoration-none" href="mailto:johndoe@gmail.com">
-                            john.doe@gmail.com
-                            </a>
+                                <span>40 rue Laure Diebold</span>
+                                <span>69009 Lyon, France</span>
+                                <a className="text-white text-decoration-none" href="tel:0102030405">
+                                10 20 30 40 50
+                                </a>
+                                <a className="text-white text-decoration-none" href="mailto:johndoe@gmail.com">
+                                john.doe@gmail.com
+                                </a>
                             </address>
                         </article>
                         <article>

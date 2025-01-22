@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { Card, Col, Row } from "react-bootstrap"
-import "../assets/services.css"
 import Foot from "../component/footer"
 
 const Services = () => {
@@ -20,7 +19,7 @@ const Services = () => {
         <section className="container-fluid d-flex justify-content-center mb-4">
             <Row className="row g-3 w-75">
                 <Col md={4} className="mx-auto">
-                    <Card className="hoverCard mb-md-3 h-100" >
+                    <Card className="Card mb-md-3 h-100" >
                         <Card.Body className="mx-2 d-flex flex-column align-items-center">
                                 <i className="bi bi-brush text-primary fs-2 my-4"></i>
                             <Card.Title className="fw-bold fs-3">
@@ -33,7 +32,7 @@ const Services = () => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card className="hoverCard mb-md-3 h-100" >
+                    <Card className="Card mb-md-3 h-100" >
                         <Card.Body className="mx-2 d-flex flex-column align-items-center">
                                 <i className="bi bi-code-slash text-primary fs-2 my-4"></i>
                             <Card.Title className="fw-bold fs-3 text-center">
@@ -46,7 +45,7 @@ const Services = () => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card className="hoverCard mb-5 mb-md-3 h-100" >
+                    <Card className="Card mb-5 mb-md-3 h-100" >
                         <Card.Body className="mx-2 d-flex flex-column align-items-center">
                                 <i className="bi bi-search text-primary fs-2 my-4"></i>
                             <Card.Title className="fw-bold fs-3">
