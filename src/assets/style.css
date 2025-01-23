@@ -30,7 +30,19 @@ button:active{
     filter: brightness(140%);
 }
 
-.shadowBottom{
-    box-shadow: 0px 8px 15px -10px rgba(0,0,0,0.2);
-    border-radius: 0 0 10px 10px;
+
+
+@media (max-width:768px) {
+    .shadowBottomSm {
+        box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.2);
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px){
+    .shadowBottomMd {
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+        width: 75%;
+    }
 }

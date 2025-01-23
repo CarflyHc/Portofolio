@@ -23,7 +23,6 @@ const Portofolio = () => {
                 <Row className="g-4">
                     <Col 
                         md={4}
-                        className=""
                     >
                         <Card className="mb-3 text-center Card">
                             <Card.Img 
