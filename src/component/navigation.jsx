@@ -4,8 +4,8 @@ import { Nav } from "react-bootstrap"
 
 const Navigation = () => {
     return (
+        <header>
           <Nav variant="underline" className="navbar navbar-dark bg-dark navbar-expand-md justify-content-between px-4">
-
               <span className="navbar-brand p-3 text-uppercase">John Doe</span>
               <button 
                 className="navbar-toggler rounded collapsed" 
@@ -38,11 +38,12 @@ const Navigation = () => {
                     <NavLink to="/Contact" className="nav-link link-light text-uppercase">Contact</NavLink>
                   </Nav.Item>
                   <Nav.Item as ="li" className="nav-item">
-                    <NavLink to="/Mentions-Legales" className="nav-link link-light text-uppercase">Mentions Legales</NavLink>
+                    <NavLink to="/Mentions-Legales" className="nav-link link-light text-uppercase">Mentions Légales</NavLink>
                   </Nav.Item>
                 </ul>
               </div>
           </Nav>
+        </header>
     )
 }
 export default Navigation

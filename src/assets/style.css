@@ -6,3 +6,43 @@ body{
 h1,h2,h3,h4,h5,h6,strong{
     font-weight: 600;
 }
+
+.Card:hover {
+    background-color: #efefef;
+    box-shadow: 5px 5px #efefef;
+    transition: all 1sec;
+}
+button:hover{
+    filter: brightness(85%);
+    transition: 0.3s ease-in-out;
+}
+
+button:active{
+    filter: brightness(70%);
+}
+
+.btnCard:hover{
+    filter: brightness(115%);
+    transition: 0.3s ease-in-out;
+}
+
+.btnCard:active{
+    filter: brightness(140%);
+}
+
+
+@media (max-width:768px) {
+    .shadowBottomSm {
+        box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.2);
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px){
+    .shadowBottomMd {
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+        width: 75%;
+    }
+}
+
