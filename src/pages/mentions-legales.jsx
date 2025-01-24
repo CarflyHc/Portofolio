@@ -13,10 +13,6 @@ const LegalNotice = () => {
                     name="robots" 
                     content="noindex, nofollow" 
                 />
-                <meta 
-                    name="description" 
-                    content="Mentions légales du site, incluant les informations sur l'éditeur, l'hébergeur et les crédits." 
-                />
             </Helmet>
         </header>
         <main>
