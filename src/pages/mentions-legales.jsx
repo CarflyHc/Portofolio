@@ -2,20 +2,24 @@ import { Accordion } from "react-bootstrap"
 import Adress from "../component/adress.jsx"
 import Foot from "../component/footer.jsx"
 import { Helmet } from "react-helmet-async"
+import "../assets/mentions-legales.css"
 
 const LegalNotice = () => {
     return (
         <>
+        <header>
             <Helmet>
                 <meta name="robots" content="noindex, nofollow" />
             </Helmet>
+        </header>
+        <main>
             <section className="my-5 mx-2">
                 <article className="d-flex flex-column align-items-center mx-2 text-center">
                     <h1 className="fw-bold">Mentions légales</h1>
                     <hr className="border border-primary border-3 opacity-75 w-25" />
                 </article>
             </section>
-            <Accordion className="container mb-5">
+            <Accordion className="mx-auto mb-5 Tablet">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>
                         Editeur du site
@@ -57,7 +61,8 @@ const LegalNotice = () => {
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
-            <Foot/>
+        </main>
+        <Foot/>
         </>
     )
 }
