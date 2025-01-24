@@ -4,7 +4,8 @@ import Foot from "../component/footer"
 
 const Portofolio = () => {
     return (
-        <>
+    <>
+        <main>
             <picture>
                 <img 
                     className="img-fluid w-100 vh-50" 
@@ -195,8 +196,9 @@ const Portofolio = () => {
                     </Col>
                 </Row>
             </section>
-            <Foot/>
-        </>
+        </main>
+        <Foot/>
+    </>
     )
 }
 export default Portofolio

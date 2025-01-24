@@ -4,8 +4,6 @@ import { Button, Col, Form, Row } from "react-bootstrap"
 import Foot from "../component/footer"
 import Adress from "../component/adress"
 
-const Contact = () => {
-
 const AdressMap =()=> {
     return(
         <iframe 
@@ -16,16 +14,24 @@ const AdressMap =()=> {
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
             className="mt-2 rounded w-100"
+            title="Google Maps- Localisation"
         />
     )
 }
 
+const handleSubmit = (event) => {
+    event.preventDefault();
+    alert("Formulaire soumis !");
+};
+
+const Contact = () => {
     return(
         <>
+        <main>
             <section className="my-5 mx-2">
                 <article className="d-flex flex-column align-items-center mx-2 text-center">
                     <h1 className="fw-bold">Contact</h1>
-                    <p className="text-justify mb-0">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
+                    <p className="mb-0">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
                     <hr className="border border-primary border-3 opacity-75 w-25" />
                 </article>
             </section>
@@ -36,7 +42,7 @@ const AdressMap =()=> {
                         <hr className="border border-primary border-3 opacity-75" />
                     </article>
                     <article className="mt-5 ms-2">
-                        <Form>
+                        <Form onSubmit={handleSubmit}>
                             <Form.Control 
                                 type="text" 
                                 placeholder="Votre nom" 
@@ -91,6 +97,7 @@ const AdressMap =()=> {
                     </div>
                 </Col>   
             </Row>
+        </main>
             <Foot/>
         </>
     )

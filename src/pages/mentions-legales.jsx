@@ -9,7 +9,14 @@ const LegalNotice = () => {
         <>
         <header>
             <Helmet>
-                <meta name="robots" content="noindex, nofollow" />
+                <meta 
+                    name="robots" 
+                    content="noindex, nofollow" 
+                />
+                <meta 
+                    name="description" 
+                    content="Mentions légales du site, incluant les informations sur l'éditeur, l'hébergeur et les crédits." 
+                />
             </Helmet>
         </header>
         <main>
@@ -34,11 +41,11 @@ const LegalNotice = () => {
                     </Accordion.Header>
                     <Accordion.Body>
                         <address className="d-flex flex-column">
-                            <h2 className="fw-bold">alwaysdata</h2>
+                            <h3 className="fw-bold">alwaysdata</h3>
                             <span>91 Rue du Faubourg Saint-Honoré, 75008 Paris</span>
                             <span className="mt-3">
                                 <i className="bi bi-globe pe-2"></i>
-                                <a href="https://www.alwaysdata.com/fr/">www.alwaysdata.com </a>
+                                <a href="https://www.alwaysdata.com/fr/" target="_blank" rel="noopener noreferrer">www.alwaysdata.com </a>
                             </span>
                         </address>
                     </Accordion.Body>
@@ -48,15 +55,15 @@ const LegalNotice = () => {
                         Crédits
                     </Accordion.Header>
                     <Accordion.Body>
-                        <h2 className="fw-bold">Crédits</h2>
-                        <p className="text-justify">Ce site a été réalisé par John Doe, étudiant au 
-                            <a href="https://www.centre-europeen-formation.fr/landing/multi-marque/?code=1464&utm_source=google&utm_medium=cpc&utm_campaign=TOTAL-REF_PAYANT-Marque_CEF&gad_source=1&gclid=Cj0KCQiA7se8BhCAARIsAKnF3rwz-FqxD6UGOOjPGgKAbm8vfYlxxvrerNaJPweHVADFhRe-W4xPyoMaAquiEALw_wcB" target="_blank"> Centre Européen de formation</a>.
+                        <h3 className="fw-bold">Crédits</h3>
+                        <p>Ce site a été réalisé par John Doe, étudiant au 
+                            <a href="https://www.centre-europeen-formation.fr/landing/multi-marque/?code=1464&utm_source=google&utm_medium=cpc&utm_campaign=TOTAL-REF_PAYANT-Marque_CEF&gad_source=1&gclid=Cj0KCQiA7se8BhCAARIsAKnF3rwz-FqxD6UGOOjPGgKAbm8vfYlxxvrerNaJPweHVADFhRe-W4xPyoMaAquiEALw_wcB" target="_blank" rel="noopener noreferrer"> Centre Européen de formation</a>.
                         </p>
-                        <p className="fst-italic text-justify">Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site
-                            <a href="https://pixabay.com/fr/" target="_blank"> Pixabay</a>
+                        <p className="fst-italic">Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site
+                            <a href="https://pixabay.com/fr/" target="_blank" rel="noopener noreferrer"> Pixabay</a>
                         </p>
-                        <p className="fst-italic text-justify">Le flavicon de ce site a été fournie par
-                            <a href="https://www.flaticon.com/fr/" target="_blank"> John Doe Icons erstallt von Freepik - Flaticon</a>
+                        <p className="fst-italic">Le flavicon de ce site a été fournie par
+                            <a href="https://www.flaticon.com/fr/" target="_blank" rel="noopener noreferrer"> John Doe Icons erstallt von Freepik - Flaticon</a>
                         </p>
                     </Accordion.Body>
                 </Accordion.Item>
